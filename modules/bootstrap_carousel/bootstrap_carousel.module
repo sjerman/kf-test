@@ -8,7 +8,7 @@
 /**
  * Implements hook_libraries_info().
  */
-function bootstrap_carousel_libraries_info() {
+/*function bootstrap_carousel_libraries_info() {
   $libraries['bootstrap'] = array(
     'name' => 'Bootstrap',
     'vendor url' => 'http://twitter.github.io/bootstrap',
@@ -29,7 +29,7 @@ function bootstrap_carousel_libraries_info() {
   );
 
   return $libraries;
-}
+} */
 
 /**
  * Implements hook_node_info().
@@ -299,7 +299,7 @@ function _bootstrap_carousel_load_javascript($node) {
   drupal_add_js('https://www.youtube.com/player_api', 'external');
       
   $carousel_interval = field_get_items('node', $node, 'field_carousel_interval');
-  libraries_load('bootstrap');
+ // libraries_load('bootstrap');
   drupal_add_js(drupal_get_path('module', 'bootstrap_carousel') . '/scripts/bootstrap_carousel.js');
 
   $control_options = field_get_items('node', $node, 'field_control_options');

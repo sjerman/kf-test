@@ -6,8 +6,8 @@ core = 7.x
 
 dependencies[] = field
 dependencies[] = field_sql_storage
-dependencies[] = jquery_update
-dependencies[] = libraries (2.x)
+;dependencies[] = jquery_update
+;dependencies[] = libraries (2.x)
 
 ; Information added by drupal.org packaging script on 2013-05-29
 version = "7.x-1.0-rc1"

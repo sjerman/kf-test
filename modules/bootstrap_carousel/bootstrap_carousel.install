@@ -34,6 +34,7 @@ function bootstrap_carousel_uninstall() {
 function bootstrap_carousel_requirements($phase) {
   // Create an array to hold Bootstrap Carousel requirements.
   $requirements = array();
+  return $requirements;
   $t = get_t();
 
   // Check requirements during the runtime phase.
