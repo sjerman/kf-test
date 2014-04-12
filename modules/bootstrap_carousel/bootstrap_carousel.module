@@ -260,12 +260,9 @@ function _bootstrap_carousel_insert_after_first_element(&$a, $element) {
  * Implements hook_node_view().
  */
 function bootstrap_carousel_node_view($node, $view_mode, $langcode) {
-  $menu_object = menu_get_object();
-  if (isset($menu_object)) {
-    if ($node->type === 'bootstrap_carousel' && $menu_object->nid == $node->nid) {
+    if ($node->type === 'bootstrap_carousel') {
       _bootstrap_carousel_load_javascript($node);
       _bootstrap_carousel_load_css();
-    }
   }
 }
 
