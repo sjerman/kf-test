@@ -26,10 +26,13 @@ if(typeof(CKEDITOR) !== 'undefined') {
             { name : 'Preformatted Text', element : 'pre' },
             { name : 'Address'			, element : 'address' },
             */
+           
+           /*
 
             { name : 'Blue Title'		, element : 'h3', styles : { 'color' : 'Blue' } },
             { name : 'Red Title'		, element : 'h3', styles : { 'color' : 'Red' } },
 
+			*/
             /* Inline Styles */
 
             // These are core styles available as toolbar buttons. You may opt enabling
@@ -43,40 +46,125 @@ if(typeof(CKEDITOR) !== 'undefined') {
             { name : 'Superscript'		, element : 'sup' },
             */
 
-            { name : 'Marker: Yellow'	, element : 'span', styles : { 'background-color' : 'Yellow' } },
-            { name : 'Marker: Green'	, element : 'span', styles : { 'background-color' : 'Lime' } },
-
-            { name : 'Big'				, element : 'big' },
-            { name : 'Small'			, element : 'small' },
-            { name : 'Typewriter'		, element : 'tt' },
-
-            { name : 'Computer Code'	, element : 'code' },
-            { name : 'Keyboard Phrase'	, element : 'kbd' },
-            { name : 'Sample Text'		, element : 'samp' },
-            { name : 'Variable'			, element : 'var' },
-
-            { name : 'Deleted Text'		, element : 'del' },
-            { name : 'Inserted Text'	, element : 'ins' },
-
-            { name : 'Cited Work'		, element : 'cite' },
-            { name : 'Inline Quotation'	, element : 'q' },
-
-            { name : 'Language: RTL'	, element : 'span', attributes : { 'dir' : 'rtl' } },
-            { name : 'Language: LTR'	, element : 'span', attributes : { 'dir' : 'ltr' } },
-
-            /* Object Styles */
-
             {
-                    name : 'Bootstrap striped table',
+                    name : 'Bootstrap: striped table',
                     element : 'table',
                     attributes :
                     {
-                            'class' : 'trumble',
+                            'class' : 'table table-striped'
+                    }
+            },
+            
+            {
+                    name : 'Default button',
+                    element : 'a',
+                    attributes :
+                    {
+                            'class' : 'btn btn-default'
                     }
             },
 
             {
-                    name : 'Image by on Left',
+                    name : 'Primary button',
+                    element : 'a',
+                    attributes :
+                    {
+                            'class' : 'btn btn-primary'
+                    }
+            },
+            
+            {
+                    name : 'Success button',
+                    element : 'a',
+                    attributes :
+                    {
+                            'class' : 'btn btn-success'
+                    }
+            },
+            
+            {
+                    name : 'Warning button',
+                    element : 'a',
+                    attributes :
+                    {
+                            'class' : 'btn btn-warning'
+                    }
+            },
+            
+            {
+                    name : 'Danger button',
+                    element : 'a',
+                    attributes :
+                    {
+                            'class' : 'btn btn-danger'
+                    }
+            },
+            
+            {
+                    name : 'Default panel',
+                    element : 'div',
+                    attributes :
+                    {
+                            'class' : 'panel panel-default'
+                    }
+            },
+            
+            {
+                    name : 'Primary panel',
+                    element : 'div',
+                    attributes :
+                    {
+                            'class' : 'panel panel-primary'
+                    }
+            },
+            
+            {
+                    name : 'Success panel',
+                    element : 'div',
+                    attributes :
+                    {
+                            'class' : 'panel panel-success'
+                    }
+            },
+
+            {
+                    name : 'Warning panel',
+                    element : 'div',
+                    attributes :
+                    {
+                            'class' : 'panel panel-warning'
+                    }
+            },
+
+            {
+                    name : 'Panel heading',
+                    element : 'div',
+                    attributes :
+                    {
+                            'class' : 'panel-heading'
+                    }
+            },
+
+            {
+                    name : 'Panel body',
+                    element : 'div',
+                    attributes :
+                    {
+                            'class' : 'panel-body'
+                    }
+            },
+
+            {
+                    name : 'Panel title',
+                    element : 'h3',
+                    attributes :
+                    {
+                            'class' : 'panel-title'
+                    }
+            },
+            
+            {
+                    name : 'Image on Left',
                     element : 'img',
                     attributes :
                     {
