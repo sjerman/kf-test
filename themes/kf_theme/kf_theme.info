@@ -30,7 +30,6 @@ stylesheets[all][] = css/bootstrap.min.css
 stylesheets[all][] = css/overrides.css
 
 
-scripts[] = js/ckeditor.styles.js 
 scripts[] = js/bootstrap.min.js 
 
 ; For information on choosing the desired method, please read the Drupal
