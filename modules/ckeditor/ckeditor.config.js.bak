@@ -104,8 +104,7 @@ CKEDITOR.on('dialogDefinition', function( ev ) {
   var dialogName = ev.data.name;
   var dialogDefinition = ev.data.definition;
 
-  if(dialogName === 'table' || dialogName == 'tableProperties') {
-  	
+  if(dialogName === 'table') {
     var infoTab = dialogDefinition.getContents('info');
     var cellSpacing = infoTab.get('txtCellSpace');
     cellSpacing['default'] = "0";
@@ -113,24 +112,7 @@ CKEDITOR.on('dialogDefinition', function( ev ) {
     cellPadding['default'] = "0";
     var border = infoTab.get('txtBorder');
     border['default'] = "0";
-    txtWidth = infoTab.get( 'txtWidth' );
-    txtWidth['default'] = '100%';
-     
-
-     // we want our own style 
-     var advTab = dialogDefinition.getContents( 'advanced' );
-     if (advTab != null) {
-         //add our specific width
-         var stylesField = advTab .get( 'advStyles' );
-         stylesField ['default'] = 'width: 300px';
-
-         var styleClassesField = advTab .get( 'advCSSClasses' );
-         styleClassesField ['default'] = 'table table-striped';
-
-         //more than a suggestion... hide the field so user can't modify
-         // styleClassesField ['hidden'] = true;   //disable might exist .. see but not touch
-     	
-     }
-    
+//    var width = infoTab.get('width');
+//    border['default'] = "100%";
   }
 });

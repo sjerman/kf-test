@@ -67,16 +67,16 @@ if(typeof(CKEDITOR) !== 'undefined') {
             /* Object Styles */
 
             {
-                    name : 'Bootstrap: striped table',
+                    name : 'Bootstrap striped table',
                     element : 'table',
                     attributes :
                     {
-                            'class' : 'table table-striped'
+                            'class' : 'trumble',
                     }
             },
 
             {
-                    name : 'Image on Left',
+                    name : 'Image by on Left',
                     element : 'img',
                     attributes :
                     {
