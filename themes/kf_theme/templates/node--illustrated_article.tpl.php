@@ -119,6 +119,7 @@
   
   <?php if ($slide_items) : ?>
   <!-- use pull-right --> 
+  <div id="wrap-slides" class="center-block" >
   <div id="slides" class="carousel slide " data-ride="carousel">
      <ol class="carousel-indicators">
       <?php foreach ($slide_items as $id => $carousel_slide) : ?>
@@ -133,6 +134,7 @@
    <?php endforeach; ?>
     </div>
    </div>   
+   </div>
    <?php endif; ?>
    
    <?php 
