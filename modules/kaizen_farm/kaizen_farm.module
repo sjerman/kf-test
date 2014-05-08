@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Kaizen Farm feature.
+ */
+
+include_once 'kaizen_farm.features.inc';
